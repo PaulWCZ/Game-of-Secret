@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu des Secrets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Jeu des Secrets</h1>
+        <div id="player-count-container">
+            <label for="player-count">Entrez le nombre de joueurs :</label>
+            <input type="number" id="player-count" min="2" max="10">
+            <button onclick="startGame()">Commencer le jeu</button>
+        </div>
+        <div id="player-names-container" style="display:none;">
+            <h2>Entrez les noms des joueurs</h2>
+            <div id="player-names-inputs"></div>
+            <button onclick="previousPlayerName()">Précédent</button>
+            <button onclick="submitPlayerNames()">Valider les noms</button>
+        </div>
+        <div id="input-container" style="display:none;">
+            <p id="player-instruction"></p>
+            <input type="text" id="player-secret">
+            <button onclick="previousSecret()">Précédent</button>
+            <button onclick="submitSecret()">Valider</button>
+            <button id="start-game-button" style="display:none;" onclick="shuffleAndDisplaySecrets()">Commencer le jeu</button>
+        </div>
+        <div id="secret-list-container" style="display:none;">
+            <h2>Tous les Secrets</h2>
+            <ul id="secret-list"></ul>
+        </div>
+        <div id="guess-container" style="display:none;">
+            <h2>Faites vos propositions</h2>
+            <div id="guess-instructions"></div>
+            <button onclick="submitGuess()">Valider la proposition</button>
+        </div>
+        <div id="result-container" style="display:none;">
+            <h2>Résultats</h2>
+            <div id="result-bar"></div>
+            <p id="result-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

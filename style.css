@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 0;
+    color: #5784BA;
+}
+
+#secret-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#secret-list li {
+    background: #F7F6CF;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #5784BA;
+    font-weight: bold;
+}
+
+#guess-container div {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #88C7BC;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #5784BA;
+}
+
+input, select {
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#result-bar {
+    height: 5px;
+    background-color: green;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: width 7s linear;
+}
